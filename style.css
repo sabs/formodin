@@ -1,0 +1,118 @@
+/* basic shape */ 
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8em;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    margin-left: 200px;
+    margin-right: 200px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+main > *, fieldset > * {
+    flex: 1 1 0; 
+}
+
+main > * {
+    min-height: 100vh;
+}
+
+/* main content */
+#maincontent {
+    background-color: #dbb3b3;
+    color: #3f3f3f;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 139, .5);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+}
+
+input {
+    display: block;
+    padding-left: 1em;
+    border: 1px solid #E5E7EB;
+}
+input:focus {
+    border: 1px solid blue;
+}
+input:invalid {
+    border: 1px solid red;
+}
+
+label {
+    font-variant: small-caps;
+    line-height: 2em;
+}
+
+#form p {
+    margin: 2em;
+}
+
+#formfields {
+    background-color: rgb(193, 131, 171);
+    background-color: rgba(0, 0, 139, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+fieldset {
+    border: 0;
+}
+
+button {
+    color: #fff;
+    background-color: rgba(0, 0, 139, 0.5);
+    border: 0;
+    border-radius: 2px;
+    padding: 1em;
+}
+button:hover {
+    background-color: rgba(0, 0, 139, 0.3);
+}
+
+/* sidebar */
+
+#logo {
+    background-image: url(resources/max-van-den-oetelaar-ZPFyr9gGcJw-unsplash.jpg);
+}
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 234, 202)
+}
+@font-face {
+    font-family: "Norse Bold";
+    src: url(resources/Norse-Bold.otf) format("opentype");
+}
+
+#logo p {
+    font-family: "Norse Bold", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    background-color: rgb(0, 0, 139, 0.5);
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#logo footer {
+    width: 100%;
+    text-align: center;
+}
+#logo footer, #logo footer a {
+    color: grey;
+    background: rgba(255,255,255, 0.5);
+}
+
