@@ -45,7 +45,9 @@ input {
 input:focus {
     border: 1px solid blue;
 }
-input:invalid {
+
+/* This only works in Firefox/Safari but the :invalid behaviour is quite useless... */
+input:user-invalid {
     border: 1px solid red;
 }
 
